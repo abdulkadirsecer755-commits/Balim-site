@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balım ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(circle at top, #35152d 0%, #170d17 45%, #08070b 100%);
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 25px 18px 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.intro {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-box {
+    animation: fadeIn 2s ease;
+}
+
+.small {
+    color: #e8a6ca;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 43px;
+    margin-bottom: 18px;
+    text-shadow: 0 0 25px rgba(255, 100, 180, .5);
+}
+
+.intro p {
+    color: #ddd;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+button {
+    margin-top: 28px;
+    border: none;
+    padding: 14px 27px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff4f9a, #c72d73);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(255, 60, 150, .3);
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.letter {
+    margin-top: 30px;
+    background: rgba(255,255,255,.055);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 25px;
+    padding: 27px 22px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 50px rgba(0,0,0,.4);
+    animation: slideUp 1s ease;
+}
+
+.letter-title {
+    text-align: center;
+    color: #ff80b8;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.letter p {
+    color: #e9e9e9;
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 18px;
+}
+
+.highlight {
+    color: #ff91c2;
+    font-weight: bold;
+}
+
+.quote {
+    border-left: 3px solid #ff4f9a;
+    padding-left: 15px;
+    margin: 25px 0;
+    color: #ffc4dc;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.final {
+    margin-top: 35px;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.final h2 {
+    font-size: 29px;
+    color: #ff75b1;
+    margin-bottom: 15px;
+}
+
+.final p {
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    color: #ff5caa;
+    animation: floatUp linear forwards;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(.7);
+        opacity: 0;
+    }
+    15% {
+        opacity: .8;
+    }
+    100% {
+        transform: translateY(-110vh) scale(1.3) rotate(25deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:500px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .letter {
+        padding: 23px 18px;
+    }
+
+    .letter p {
+        font-size: 15.5px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <section class="intro">
+        <div class="intro-box">
+
+            <div class="small">SADECE SENİN İÇİN ❤️</div>
+
+            <h1>Balım...</h1>
+
+            <p>
+                Sana söylemek istediğim çok şey var.<br>
+                Belki mesajla anlatamayacağım şeyleri<br>
+                burada anlatabilirim.
+            </p>
+
+            <button onclick="openLetter()">
+                Mektubu aç ❤️
+            </button>
+
+        </div>
+    </section>
+
+
+    <section id="letter" class="letter hidden">
+
+        <div class="letter-title">
+            Balım, bunu gerçekten okumanı istiyorum...
+        </div>
+
+        <p>
+            Balım seni çok seviyorum. Ama sana karşı bazen ne yapacağımı,
+            nasıl davranacağımı gerçekten bilmiyorum. Çünkü ben trip çekmek
+            nedir bilmiyorum. Daha önce hiç böyle bir şey yaşamadım.
+            Daha önce hiç kız arkadaşım olmadı.
+        </p>
+
+        <p>
+            Yeni yeni kızlarla konuşabilmeye başlamışken seni buldum.
+            O yüzden belki biraz acemiyim. İnsanların, özellikle de
+            sevdiğim insanın gerçekte ne hissettiğini anlamakta bazen
+            gerçekten zorlanıyorum.
+        </p>
+
+        <p>
+            Bazen kendimi o kadar mal durumuna düşürüyorum ki ne
+            yaparsam yapayım yanlış yapıyormuşum gibi hissediyorum.
+            Bazen de aklıma saçma düşünceler geliyor.
+            Acaba beni sadece takılmalık biri olarak mı görüyorsun?
+            Acaba benim sana verdiğim değer kadar sen de bana değer
+            veriyor musun diye düşünüyorum.
+        </p>
+
+        <div class="quote">
+            "Dışarıdan ne kadar olgun görünsem de içimde hâlâ
+            yalnız büyümüş o çocuğu tamamen bırakamadım."
+        </div>
+
+        <p>
+            Belki dışarıdan baktığında beni daha olgun biri gibi
+            görüyorsun. Ama içimde hâlâ yalnız büyümüş, çoğu şeyi
+            kendi başına öğrenmek zorunda kalmış bir çocuk var.
+        </p>
+
+        <p>
+            Ve o çocuğun yaptığı en güzel şeylerden biri seni seçmek oldu.
+        </p>
+
+        <p>
+            Hani bazen bir kız görürsün, "güzelmiş" dersin ve geçersin.
+            Ama ben sende öyle takılı kaldım ki geçemiyorum.
+            Ve açıkçası geçmek de istemiyorum.
+        </p>
+
+        <p>
+            Aşk nedir, nasıl bir şeydir, bunu en iyi ben bilirim
+            demiyorum. Ama seni sevdiğimde bunun benim için ne kadar
+            gerçek olduğunu biliyorum.
+        </p>
+
+        <p>
+            Sorun şu ki karşılıklı olduğunda çok zorlanıyorum.
+            Çünkü seni kaybetme düşüncesi bile benim için fazla ağır.
+            Sen bana soğuk davrandığında içimde bir şey beni yiyip
+            bitiriyor. Çok yoruluyorum ama yine de dayanıyorum.
+        </p>
+
+        <p>
+            Çünkü seni bırakmak hiçbir zaman aklımın ucundan bile geçmedi.
+            Ben seni kaybetmek istemiyorum.
+        </p>
+
+        <p>
+            Bazen kendime "Ben bu kızı bile hak etmiyorum." diyorum.
+            Çünkü ben gerçekten fazla saf, fazla düşüncesiz,
+            bazen de gerçekten malın teki olabiliyorum.
+            Ama sana karşı hissettiklerim konusunda hiç yalan söylemedim.
+        </p>
+
+        <p>
+            Ben yalnız büyüdüm.
+            Yalnız yaşadım.
+            Yalnız gördüm.
+        </p>
+
+        <p>
+            Liseye geçene kadar okuldan doğru düzgün arkadaşım bile yoktu.
+            Tek başıma derse girerdim, tek başıma çıkardım.
+            Çoğu zaman insanların arasında bile arka planda kalan
+            kişi bendim.
+        </p>
+
+        <p>
+            Belki bu yüzden birine kendimi açmak benim için bu kadar zor.
+            Ama ilk defa kendimi birine bu kadar açtım.
+            İlk defa birinin beni gerçekten tanımasını istedim.
+        </p>
+
+        <p>
+            Ve o kişi sen oldun.
+        </p>
+
+        <p>
+            Ben hiçbir zaman sevdiğim kadar sevilmedim.
+            Beni kullanan insanlar oldu.
+            Değer verdiğim insanların bana aynı değeri vermediği
+            zamanlar oldu.
+        </p>
+
+        <p>
+            Bu yüzden bazen sana karşı gereğinden fazla korkuyorum.
+            Bazen küçücük bir soğukluğunu bile kafamda büyütüyorum.
+            Çünkü seni kaybetmekten korkuyorum.
+        </p>
+
+        <p>
+            Belki bunu sana anlatmak yerine susuyorum,
+            belki saçma davranıyorum, belki ne yapacağımı bilmiyorum.
+            Ama inan bana bunun sebebi umursamamam değil.
+            Tam tersine, <span class="highlight">fazla umursamam.</span>
+        </p>
+
+        <p>
+            Ben sana kusursuz biri olduğumu söylemedim.
+            Zaten değilim.
+            Hatalarım var, acemiliklerim var, anlamadığım şeyler var.
+            Ama seni gerçekten seven biriyim.
+        </p>
+
+        <p>
+            Bazen kendimi Ezel dizisindeki Ömer gibi hissediyorum.
+            Her şeyi içine atan, çoğu şeyi tek başına yaşamaya alışmış
+            ve insanlara kendini anlatmakta zorlanan biri gibi...
+        </p>
+
+        <p>
+            Ama senin yanında o eski halimde kalmak istemiyorum.
+            Kendimi sana anlatmak, seni anlamayı öğrenmek ve seninle
+            daha iyi olmayı istiyorum.
+        </p>
+
+        <p>
+            Eğer bazen seni anlamıyorsam, lütfen bunu seni sevmediğim
+            şeklinde düşünme.
+            Bazen gerçekten ne yapmam gerektiğini bilmiyorum.
+        </p>
+
+        <p>
+            Bana kızabilirsin, trip atabilirsin, hatta bazen
+            sinirlenebilirsin.
+            Ama lütfen içinden "artık beni sevmiyor" diye geçirme.
+        </p>
+
+        <p>
+            Çünkü benim problemim sevgimin az olması değil.
+            Ben sadece sevgimi nasıl göstereceğimi yeni öğreniyorum.
+        </p>
+
+        <div class="final">
+
+            <h2>Ve son olarak... ❤️</h2>
+
+            <p>
+                Ben seni kaybetmek istemiyorum Balım.
+                Mükemmel bir sevgili olmayabilirim.
+                Her şeyi doğru yapamayabilirim.
+                Bazen gerçekten saçmalayabilirim.
+                Ama seni sevdiğim konusunda sana verebileceğim
+                en dürüst cevap bu.
+            </p>
+
+            <br>
+
+            <p>
+                <span class="highlight">
+                    Seni seçtim.
+                    Hâlâ seni seçiyorum.
+                    Ve seni bırakmak istemiyorum.
+                </span>
+            </p>
+
+            <button onclick="showSecret()">
+                Bir şey daha var... 💌
+            </button>
+
+            <p id="secret" class="hidden" style="margin-top:25px;">
+                Eğer buraya kadar okuduysan...
+                bilmeni istediğim tek şey şu:
+                <br><br>
+                <strong>
+                    Ben seni sadece güzel olduğun için sevmedim.
+                    Seni sen olduğun için sevdim.
+                    ❤️
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script>
+
+function openLetter() {
+
+    document.getElementById("letter").classList.remove("hidden");
+
+    setTimeout(() => {
+        document.getElementById("letter").scrollIntoView({
+            behavior: "smooth"
+        });
+    }, 100);
+
+}
+
+function showSecret() {
+
+    const secret = document.getElementById("secret");
+
+    secret.classList.remove("hidden");
+
+    secret.scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+    heart.innerHTML = "♥";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (10 + Math.random() * 22) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 6) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 11000);
+
+}
+
+setInterval(createHeart, 700);
+
+</script>
+
+</body>
+</html>
