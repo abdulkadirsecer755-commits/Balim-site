@@ -97,7 +97,6 @@
             }
         }
 
-        /* Şarkı kontrolü için küçük bir buton (tarayıcı engellerse diye) */
         .music-btn {
             position: fixed;
             bottom: 25px;
@@ -124,75 +123,4 @@
     <div class="container">
         <h1>balım...</h1>
         
-        <div class="line"></div>
-
-        <div class="letter">
-            <p>Seninle konuşurkenki o heyecanı gizlemeye çalışıyorum.</p>
-
-            <p>Seni çok seviyorum. Ama ben trip çekmek nedir bilmiyorum. Daha önce hiç trip çekmedim. Daha önce hiç kız arkadaşım olmadı. Yeni yeni kızlarla konuşabilmeye başlamışken seni buldum. O yüzden biraz acemiyim.</p>
-
-            <p>Kızların gerçekte ne hissettiklerini bilemiyorum. Kendimi her zaman mal durumuna düşürüyorum bazen. Beni sadece takılmalık biri olarak gördüğünü düşündüğüm anlar oluyor.</p>
-
-            <p>Dış görünüşüm ne kadar olgun dursa da, içimdeki o yalnız çocuğu bırakamamışım. Ve içimdeki o çocuk seni seçti.</p>
-
-            <p>Hani bazen bir kız görürsün, “güzelmiş, taş gibiymiş” deyip geçersin… Ama ben sende takılı kaldım. Geçemiyorum. Geçmek de istemiyorum.</p>
-
-            <p>Aşk nedir, nasıl bir şeydir en iyi ben bilirim. Ama karşılıklı olunca çok zorlanıyorum. Sen yaşamışsın, en azından tecrüben var.</p>
-
-            <p>İnan, sen bana soğuk davranınca içimde bir şey beni yiyip bitiriyor. Çok yoruluyorum ama dayanıyorum. Seni bırakmak aklımın ucundan bile geçmedi. Seni kaybetmek istemiyorum.</p>
-
-            <p>Ben o kadar saf ve mal biriyim ki, seni bile hak etmediğimi düşündüğüm anlar oluyor.</p>
-
-            <p>Yalnız büyüdüm. Yalnız yaşadım. Yalnız gördüm. Liseye geçene kadar okuldan arkadaşım yoktu. Tek başıma derse girer, tek başıma çıkardım. Hep arka planda kalan oldum.</p>
-
-            <p>İlk defa kendimi birine bu kadar açtım. Umarım beni anlıyorsundur.</p>
-
-            <p>Ben hiçbir zaman sevdiğim kadar sevilmedim. Beni kullandılar. Ben sana kendimi şöyle anlatayım: Ben Ezel dizisindeki Ömer gibiydim, hâlâ da öyleyim. Ama seni herkesten çok sevdim. Hâlâ da seviyorum.</p>
-        </div>
-
-        <div class="signature">
-            senin olan
-        </div>
-    </div>
-
-    <!-- Şarkı -->
-    <audio id="bgMusic" loop>
-        <source src="remembrance.mp3" type="audio/mpeg">
-    </audio>
-
-    <button class="music-btn" onclick="toggleMusic()" id="musicButton">şarkıyı başlat</button>
-
-    <script>
-        const audio = document.getElementById('bgMusic');
-        const btn = document.getElementById('musicButton');
-        let isPlaying = false;
-
-        // Sayfa açılınca çalmayı dene
-        window.addEventListener('load', () => {
-            audio.volume = 0.45;
-            const playPromise = audio.play();
-            
-            if (playPromise !== undefined) {
-                playPromise.then(() => {
-                    isPlaying = true;
-                    btn.textContent = "şarkıyı durdur";
-                }).catch(() => {
-                    // Tarayıcı engellediyse butonla başlatılacak
-                    btn.textContent = "şarkıyı başlat";
-                });
-            }
-        });
-
-        function toggleMusic() {
-            if (isPlaying) {
-                audio.pause();
-                btn.textContent = "şarkıyı başlat";
-            } else {
-                audio.play();
-                btn.textContent = "şarkıyı durdur";
-            }
-            isPlaying = !isPlaying;
-        }
-    </script>
-</body>
-</html>
+        <div class="line"></
